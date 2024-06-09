@@ -114,12 +114,12 @@ img{
 }
 
 .slide1{
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("background.png") !important;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./Images/background.png") !important;
 
 }
 
 .slide2{
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("simonabg.png") !important;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./Images/simonabg.png") !important;
 }
 
 #heroSlider h6::after,
@@ -198,7 +198,7 @@ p {
 }
 
 #features{
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("pivo.jpg");
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./Images/pivo.jpg");
 }
 
 .feature{
@@ -219,7 +219,7 @@ p {
 }
 
 #recenze{
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("pivo.jpg");
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./Images/pivo.jpg");
 }
 
 .review img{
@@ -253,7 +253,7 @@ p {
 
 
 footer{
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("pivo.jpg");
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./Images/pivo.jpg");
   padding-top: 120px;
   padding-bottom: 30px;
 }
@@ -322,5 +322,4 @@ footer img{
 
 
 }
- 
  
