@@ -7,54 +7,59 @@
   <title>Restaurace u jezevce</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="css.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="css.css">
+  
 </head>
 
 <body>
   <nav id="myNavbar" class="navbar navbar-expand-lg sticky-top bg-white shadow py-3">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="logojezevec.png" alt="logo" width="100" id="logo" class="logo">
-      </a>
+    <a class="navbar-brand" href="#">
+      <img src="prosim.png" alt="logo" class="logo">
+    </a>
+    <div class="container mx-auto">
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-
+        
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#domu">Domů</a>
+            <a class="nav-link" arria-current="page" href="#heroSlider">Domů</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#onas">O nás</a>
+            <a class="nav-link" href="#about">O nás</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#aktuality">Aktuality</a>
+            <a class="nav-link" href="#menuobsah">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#menu">Menu</a>
+            <a class="nav-link" href="#features">Výhody</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#recenze">Recenze</a>
           </li>
         </ul>
-        <a href="#" class="btn btn-brand">Kontaktuj nás</a>
+        <a href="#foot" class="btn btn-brand">Kontaktuj nás</a>
       </div>
     </div>
   </nav>
 
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
 
-      <div class="carousel-item active slide1">
+      <div class="carousel-item active bg-cover slide1">
         <div class="container">
           <div class="row">
             <div class="col-lg-8">
-              <div class="carousel-caption">
-                <h6 class="text-white">Restaurace u jezevce</h6>
-                <h1 class="display-1 text-white">Kdo neviděl, neuvěří</h1>
-                <a href="#" class="btn btn-brand">Rezervace</a>
+              <div class="carousel-caption uvod">
+                <h6 class="text-white">JEZEVEC</h6>
+                <h1 class="display-1 text-white fw-bold">Kdo neviděl, neuvěří</h1>
+                <a href="#reservation" class="btn btn-brand justify-content-center">Rezervace</a>
               </div>
 
             </div>
@@ -62,14 +67,14 @@
         </div>
       </div>
 
-      <div class="carousel-item slide2">
+      <div class="carousel-item bg-cover slide2">
         <div class="container">
           <div class="row">
             <div class="col-lg-8">
-              <div class="carousel-caption">
-                <h6 class="text-white">Restaurace u jezevce</h6>
-                <h1 class="display-2 text-white">Mistr ve specialitách</h1>
-                <a href="#" class="btn btn-brand">Rezervace</a>
+              <div class="carousel-caption uvod">
+                <h6 class="text-white">JEZEVEC</h6>
+                <h1 class="display-2 text-white fw-bold">Každý lichý čtvrtek černý trh!</h1>
+                <a href="#reservation" class="btn btn-brand justify-content-center">Rezervace</a>
               </div>
 
             </div>
@@ -78,11 +83,11 @@
       </div>
 
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -110,6 +115,8 @@
 
   </section>
 
+<!-- menu -->
+
   <section id="menuobsah" class="bg-light">
     <div class="container more">
       <div class="row">
@@ -126,7 +133,7 @@
       </div>
     </div>
     <div class="container klik">
-      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+      <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
 
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="pills-vse-tab" data-bs-toggle="pill" data-bs-target="#pills-vse"
@@ -149,25 +156,351 @@
         </li>
         
       </ul>
+
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-vse" role="tabpanel" aria-labelledby="pills-vse-tab"
           tabindex="0">
-        <h4>Všechny lahody</h4>
+          
+        <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="drink.png" alt="" class="lomcovak width=10%">
+                <div class="menu-item-content p-4 ">
+                  <div>
+                    <span>(5.4)</span>
+                    <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+                    <h5 class="mb-1 mt-2">Drink od Marcely</h5>
+                    <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique, maxime eos sapiente beatae unde repudiandae obcaecati? Aliquam praesentium unde, tempora aut iusto, nostrum beatae perferendis deleniti, vel debitis exercitationem.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="okena.jpg" alt="" class="lomcovak width=10%">
+                <div class="menu-item-content p-4 ">
+                  <div>
+                    <span>(5.4)</span>
+                    <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+                    <h5 class="mb-1 mt-2">Domácí LongIsland</h5>
+                    <p class="small">Jste už otrávený z klasických furt se opakujících drinků v hospodách? Máme pro Vás tím pádem dorbou zprávu. U nás můžete vyzkoušet náš bezkonkurenční LongIsland. Zaručujeme, že se po něm už nebudete cítit jako dříve.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="otasnik.jpg" alt="" class="lomcovak width=10%">
+                <div class="menu-item-content p-4 ">
+                  <div>
+                    <span>(5.4)</span>
+                    <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+                    <h5 class="mb-1 mt-2">Branický lomcovák</h5>
+                    <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+                <div class="menu-item-content p-4 ">
+                  <div>
+                    <span>(5.4)</span>
+                    <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+                    <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                    <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+                <div class="menu-item-content p-4 ">
+                  <div>
+                    <span>(5.4)</span>
+                    <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+                    <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                    <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+                <div class="menu-item-content p-4 ">
+                  <div>
+                    <span>(5.4)</span>
+                    <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+                    <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                    <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+                <div class="menu-item-content p-4 ">
+                  <div>
+                    <span>(5.4)</span>
+                    <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+                    <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                    <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+                <div class="menu-item-content p-4 ">
+                  <div>
+                    <span>(5.4)</span>
+                    <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+                    <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                    <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div> 
+
         </div>
 
         <div class="tab-pane fade show " id="pills-predkrmy" role="tabpanel" aria-labelledby="pills-predkrmy-tab"
           tabindex="0">
-        <h4>Předkrmy</h4>
+          <div class="row gy-4">
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+                <div class="menu-item-content p-4 ">
+                  <div>
+                    <span>(5.4)</span>
+                    <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+                    <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                    <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+                <div class="menu-item-content p-4 ">
+                  <div>
+                    <span>(5.4)</span>
+                    <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+                    <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                    <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
         <div class="tab-pane fade show " id="pills-hlavni" role="tabpanel" aria-labelledby="pills-hlavni-tab"
           tabindex="0">
-        <h4>Hlavní jídla</h4>
+          <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+            <div class="menu-item bg-white shadow-on-hover">
+              <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+              <div class="menu-item-content p-4 ">
+                <div>
+                  <span>(5.4)</span>
+                  <span class="stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </span>
+                  <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                  <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+            <div class="menu-item bg-white shadow-on-hover">
+              <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+              <div class="menu-item-content p-4 ">
+                <div>
+                  <span>(5.4)</span>
+                  <span class="stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </span>
+                  <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                  <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+            <div class="menu-item bg-white shadow-on-hover">
+              <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+              <div class="menu-item-content p-4 ">
+                <div>
+                  <span>(5.4)</span>
+                  <span class="stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </span>
+                  <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                  <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
 
         <div class="tab-pane fade show " id="pills-napoje" role="tabpanel" aria-labelledby="pills-napoje-tab"
           tabindex="0">
-        <h4>Nápoje</h4>
+          <div class="row gy-4">
+            <div class="col-lg-3 col-sm-6">
+            <div class="menu-item bg-white shadow-on-hover">
+              <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+              <div class="menu-item-content p-4 ">
+                <div>
+                  <span>(5.4)</span>
+                  <span class="stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </span>
+                  <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                  <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+            <div class="menu-item bg-white shadow-on-hover">
+              <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+              <div class="menu-item-content p-4 ">
+                <div>
+                  <span>(5.4)</span>
+                  <span class="stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </span>
+                  <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                  <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="vysmiii.jpg" alt="" class="lomcovak width=10%">
+                <div class="menu-item-content p-4 ">
+                  <div>
+                    <span>(5.4)</span>
+                    <span class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </span>
+                    <h5 class="mb-1 mt-2">Branický Lomcovák</h5>
+                    <p class="small">Branický lomcovák  je záhadou a zároveň legendou naší restaurace. Skládá se z těch nejlěpších lihovin smíchaných do sebe. Pořekadlo z Pejska a Kočičky, které zní: když se smíchá vše dobré, nemůže z toho vylézt něco dobrého, u něj rozhodně neplatí.</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -175,16 +508,281 @@
 
   </section>
 
+<!-- features -->
+
+  <section id="features" class="bg-cover">  
+    <div class="container">
+      <div class="row">
+        <div class="col-12 intro-text">
+             <h1 class="text-white">Proč zrovna my?</h1>
+             <p class="text-white text-center">Toto jsou jedny z výhod, které nabízíme a u kterýchž zaručujeme stoprocentní kvalitu a funkčnost.</p>
+        </div> 
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-3 col-sm-6">
+          <div class="feature p-4 text-center">
+            <div class="feature-icon">
+              <i class="ri-heart-line"></i>
+            </div>
+              <h4 class="text-white mt-4 mb-2">Nalíváme mladistvým</h4>
+              <p class="text-white-2 text-center text-justify"> Naše hospoda si už řádky let zakládá na věrnosti zákazníkům, etiketě a tradici, k čemuž nesrovnatelně patří nalévání mladistvým.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="feature p-4 text-center">
+            <div class="feature-icon">
+              <i class="ri-empathize-fill"></i>
+            </div>
+              <h4 class="text-white mt-4 mb-2">Obsluha nahoře bez</h4>
+              <p class="text-white-2 text-center text-justify">Jedinečnost a originalita jsou dalšími faktory, které reprezentují náš podnik. Proto každé liché pátky můžete být obsluhováni servírvkou nahoře bez.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="feature p-4 text-center">
+            <div class="feature-icon">
+              <i class="ri-beer-line"></i>
+            </div>
+              <h4 class="text-white mt-4 mb-2">Husťan na čepu</h4>
+              <p class="text-white-2 text-center text-justify">„Pivo, pivson, pivíčko. Já vůbec nechápu, jak jsem mohl bez těch slov vůbec vydržet.” Praví nejvěrnější štamgast, jehož nejoblíbenější pivo je právě náš Husťan.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="feature p-4 text-center">
+            <div class="feature-icon">
+              <i class="ri-music-fill"></i>
+            </div>
+              <h4 class="text-white mt-4 mb-2">Jukebox</h4>
+              <p class="text-white-2 text-center text-justify">Vsákneš se do mě jako déšť Vsákneš se do mě jako déšť Vsákneš se do mě jako déšť Vsákneš se do mě jako déšť Vsákneš se do mě jako déšť </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+<!-- team -->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 intro-text">
+          <h1 class="text-center">Seznam se s naším týmem!</h1>
+          <p class="text-center">Simona je tak pilným zaměstancem, že pracuje jako jediná v nonstopu. Zavřela jednou na 15 minut - syn vypadl z okna.</p>
+        </div> 
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+            <img src="sim1.png" alt="">
+            <div class="team-member-content">
+              <h4>Simona Bůčková</h4>
+              <p class="mb-0">"Kozy mojí Simonky jsou jako dva citronky"</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+            <img src="sim2.png" alt="">
+            <div class="team-member-content">
+              <h4>Simona Bůčková</h4>
+              <p class="mb-0">"Má lásko voníš dehtem"</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+            <img src="sim3.png" alt="">
+            <div class="team-member-content">
+              <h4>Simona Bůčková</h4>
+              <p class="mb-0">"Klofnout tady pípu je jako potápet se ke žralokům s krvavým stejkem v poklopci"</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+            <img src="sim4.png" alt="">
+            <div class="team-member-content">
+              <h4>Simona Bůčková</h4>
+              <p class="mb-0">""</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+    
+   <section id="recenze" class="bg-cover">
+      <div class="container">
+        <div class="row">  
+          <div class="col-12 intro-text">
+            <h1 class="text-white">Co říkají naši zákazníci?</h1>
+            <p class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae excepturi similique accusamus voluptatum</p>
+          </div>    
+        </div>
+
+        <div id="recenzeSlider" class="carousel slide mt-4">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#recenzeSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#recenzeSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    
+          </div>
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div class="review bg-white p-5 text-center">
+                      <div class="quote-icon">
+                        <i class="ri-double-quotes-l"></i>
+                      </div>
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ad libero iure fugit, quibusdam eos numquam ratione odio mollitia, necessitatibus nulla cumque eligendi quasi velit perspiciatis, neque error dolore cupiditate.</p>
+                      <div class="person mt-4">
+                        <img src="horvat.png" alt="">
+                        <h4>Horvy</h4>
+                        <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div class="review bg-white p-5 text-center">
+                      <div class="quote-icon">
+                        <i class="ri-double-quotes-l"></i>
+                      </div>
+                      <p class="mb-0">mnammnammnammanmamnamnamnamanmamanamnamamnmanmnamnamnanmamnamamnamn</p>
+                      <div class="person mt-4">
+                        <img src="marcela.jpg" alt="">
+                        <h4>Marcelka</h4>
+                        <span class="stars">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-half-fill"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#recenzeSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#recenzeSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
 
 
 
+      </div>
+    
 
+   </section>
 
+   <section id="reservation">
+      <div class="container">
+        <div class="row">  
+          <div class="col-12 intro-text">
+            <h1>Zarezervuj si u nás stůl!</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae excepturi similique accusamus voluptatum</p>
+          </div>    
+        </div>
+        <form action="#" class="row justify-content-center mt-4">
+          <div class="col-lg-8">
+            <div class="row g-3">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="jmeno" placeholder="Celé jméno">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Váš email">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="date" class="form-control" name="date" placeholder="Datum">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="time" class="form-control" name="cas" placeholder="Čas">
+              </div>
+              <div class="form-group col-md-12">
+                <textarea name="" id="" cols="30" class="form-control" placeholder="Poznámka"></textarea>
+              </div>
+              <div class="form-group text-center col-md-12">
+                <a href="#" class="btn btn-brand">Odeslat</a>
+              </div>
+          
+            </div>
+          </div>
+        </form>
+      </div>
+   </section>
+
+   <footer id="foot">
+
+    <div class="footer-top">
+      <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <img src="momspaghetti.png" class="mb-4" alt="">
+          <div class="social-links">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-tiktok-fill"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 ms-auto">
+          <h6 class="text-white mb-4">KONTAKT</h6>
+          <p class="mb-1">+420 776 892 121</p>
+          <p class="mb-1">kondenznitrubky@email.com</p>
+          <p class="mb-0">Nitranská 7, Praha-Vinohrady</p>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="text-white mb-4">OTEVÍRACÍ DOBA</h6>
+          <p class="mb-1">OTEVŘENO NONSTOP!!!</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row gy-3 justify-content-between">
+          <div class="col-auto">
+            <p class="mb-0">© LEKSA</p>
+          </div>
+          <div class="col-auto">
+            <p class="mb-0">Designed by Gabimka</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>
+
+
